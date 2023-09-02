@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
     font-family: "Be Vietnam Pro",sans-serif;
     scroll-behavior: smooth;
+}
+@media screen and (max-width:641px) {
+  .hero-section{
+    width: 100vw;
+  }
+  .navbar {
+    margin-bottom: 30px;
+  }
 }
 :root{
     --bgOrange:#e84949;
@@ -35,6 +46,7 @@
 .logo-text{
     margin-left: -1.2rem;
     font-size: 28px;
+    
 }
 .nav-items{
     display: flex;
@@ -57,15 +69,16 @@ a{
     font-weight: bold;
 }
 .hero-section{
-    position: relative;
+    /* position: relative; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    /* margin: auto auto; */
 
     gap: 5rem;
-    margin: 4rem auto;
-    padding: 0 1rem;
-    padding-bottom: 8rem;
+    /* margin: 4rem auto; */
+    /* padding: 0 1rem;   */
+    /* padding-bottom: 8rem; */
 }
 .faded-text{
     position: absolute;
@@ -81,7 +94,7 @@ a{
 .hero-section-left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 2rem;
 }
 .hero-section-heading{
@@ -92,6 +105,8 @@ a{
 .role{
     color: #4e45d5;
     font-weight: 800;
+    font-size: 2.5rem;
+    font-size: 2.5rem;
     
 }
 .hero-section-sub-heading{
@@ -101,7 +116,7 @@ a{
 }
 .hero-section-description{
     margin-top: 1rem;
-    width: 70%;
+    width: 50vw;
     font-weight: 500;
 }
 .pink-btn {
@@ -461,10 +476,10 @@ a{
     }
   }
   .skills-container{
-    position: relative;
+    /* position: relative; */
     display: flex;
-    padding: 5rem;
-    margin: 10rem auto;
+    /* padding: 5rem; */
+    /* margin: 10rem auto; */
     gap: 30px;
 
 
@@ -511,7 +526,7 @@ a{
     }
   }
   .skills-logo{
-    width: 90px;
+    width: 6vw;
     transition: all 0.5s;
     
   }
@@ -532,7 +547,7 @@ a{
     text-align: justify;
   }
   .contactus-heading{
-    font-size: 5em;
+    font-size: 10vw;
     color: var(--bgOrange);
     padding-top: 2rem;
   }
